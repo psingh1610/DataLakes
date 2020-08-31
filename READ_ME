@@ -1,0 +1,10 @@
+MyAssignment
+
+Sparkify is a music streaming app which has been collecting songs and user activity data. They want to analyze the user's song listining activity. But in order to analyze it, they want it to only the relevant data for song analysis to be extracted. For this we need to create a database schema and break it down to different dimension tables and finally building ETL pipeline to extract data from the two song and log files to our analytical database for better analysis.
+
+1.Objective of this project is to create a star schema with following fact and dimesnion tables: Fact Table: Songplay Dimension Table: songs,artists,time,users
+
+2.etl.py This helps in extarcting filepath from AWS S3. song_data: Using the filepath from song data we extract  song data and artist data columns from these files. log_data: Using the filepath from log data we extract time and user data.
+
+song_play_analysis: select song_play data from song an artist where song_id ,duration and artist_id is equal to the log data.
+
